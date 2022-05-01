@@ -1,6 +1,6 @@
 {
   "name": "perf-ref",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A mock program to normalise perf scores against it",
   "keywords": [
     "benchmark",
