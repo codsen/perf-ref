@@ -1,0 +1,61 @@
+{
+  "name": "perf-ref",
+  "version": "1.0.3",
+  "description": "A mock program to normalise perf scores against it",
+  "keywords": [
+    "benchmark",
+    "bench",
+    "performance",
+    "perf"
+  ],
+  "homepage": "https://codsen.com/os/perf-ref/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codsen/perf-ref.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Roy Revelt",
+    "email": "roy@codsen.com",
+    "url": "https://codsen.com"
+  },
+  "type": "module",
+  "exports": {
+    "script": "./perf-ref.umd.js",
+    "default": "./perf-ref.esm.js"
+  },
+  "types": "types/index.d.ts",
+  "scripts": {
+    "devtest": "c8 yarn run unit",
+    "test": "yarn run devtest",
+    "unit": "uvu test"
+  },
+  "c8": {
+    "check-coverage": false,
+    "exclude": [
+      "**/test/**/*.*"
+    ],
+    "lines": 100
+  },
+  "lect": {
+    "licence": {
+      "extras": [
+        ""
+      ]
+    },
+    "req": "{ perfRef, opsPerSec, version }",
+    "various": {
+      "devDependencies": []
+    }
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.16.3"
+  },
+  "devDependencies": {
+    "c8": "^7.11.2",
+    "uvu": "^0.5.3"
+  },
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  }
+}
