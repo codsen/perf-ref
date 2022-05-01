@@ -1,6 +1,6 @@
 # perf-ref
 
-> A mock program to normalise perf scores against it
+> A mock program to normalise perf scores
 
 <div class="package-badges">
   <a href="https://www.npmjs.com/package/perf-ref" rel="nofollow noreferrer noopener">
