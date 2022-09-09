@@ -21,6 +21,7 @@
   },
   "type": "module",
   "exports": {
+    "types": "./types/index.d.ts",
     "script": "./perf-ref.umd.js",
     "default": "./perf-ref.esm.js"
   },
